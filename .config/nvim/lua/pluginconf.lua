@@ -75,10 +75,6 @@ wk.add {
   { '<leader>bm', group = '[M]ove' },
   { '<leader>bmn', '<cmd>BufferLineMoveNext<CR>', desc = 'Move Next' },
   { '<leader>bmp', '<cmd>BufferLineMovePrev<CR>', desc = 'Move Previous' },
-
-  { '<leader>bm', group = '[G]roup' },
-  { '<leader>bmn', '<cmd>BufferLineGroupToggle<CR>', desc = 'Toggel Group' },
-  { '<leader>bmp', '<cmd>BufferLineGroupClose<CR>', desc = 'Close Group' },
 }
 
 vim.api.nvim_create_autocmd('TextYankPost', {
