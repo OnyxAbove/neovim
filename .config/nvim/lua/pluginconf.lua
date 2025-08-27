@@ -26,9 +26,59 @@ wk.add {
   { '<leader>ee', '<cmd>NvimTreeFocus<CR>', desc = 'Focus file explorer' },
   { '<leader>ef', '<cmd>NvimTreeFindFileToggle<CR>', desc = 'Toggle file explorer on current file' },
   { '<leader>er', '<cmd>NvimTreeRefresh<CR>', desc = 'Refresh file explorer' },
+
   { '<leader>o', group = '[O]pen' },
   { '<leader>ot', '<cmd>terminal<CR>', desc = 'Open a terminal in a new buffer' },
   { '<leader><Tab>', '<cmd>BufferLineCycleNext<CR>', desc = 'Next Buffer' },
+
+  { '<leader>a', 'T[a]bs' },
+  { '<leader>an', '<cmd>tabnew<CR>', desc = 'New Tab' },
+  { '<leader>a<Tab>', '<cmd>tabNext<CR>', desc = 'Next Tab' },
+  { '<leader>ap', '<cmd>tabprevious<CR>', desc = 'Previous Tab' },
+  { '<leader>ac', '<cmd>tabclose<CR>', desc = 'Close Tab' },
+  { '<leader>ao', '<cmd>tabonly<CR>', desc = 'Close Other Tab' },
+  { '<leader>af', '<cmd>tabfirst<CR>', desc = 'Go To First Tab' },
+  { '<leader>al', '<cmd>tablast<CR>', desc = 'Go To Last Tab' },
+
+  { '<leader>am', desc = '[M]ove' },
+  { '<leader>amn', '<cmd>tabmove +N<CR>', desc = 'Move Tab Next' },
+  { '<leader>amp', '<cmd>tabmove -N<CR>', desc = 'Move Tab Previous' },
+  { '<leader>amf', '<cmd>tabmove 0<CR>', desc = 'Move Tab First' },
+  { '<leader>aml', '<cmd>tabmove<CR>', desc = 'Move Tab Last' },
+
+  { '<leader>b', group = '[B]uffer' },
+  { '<leader>b1', '<cmd>BufferLineGoTo 1<CR>', desc = 'Go To Buffer 1' },
+  { '<leader>b2', '<cmd>BufferLineGoTo 2<CR>', desc = 'Go To Buffer 2' },
+  { '<leader>b3', '<cmd>BufferLineGoTo 3<CR>', desc = 'Go To Buffer 3' },
+  { '<leader>b4', '<cmd>BufferLineGoTo 4<CR>', desc = 'Go To Buffer 4' },
+  { '<leader>b5', '<cmd>BufferLineGoTo 5<CR>', desc = 'Go To Buffer 5' },
+  { '<leader>b6', '<cmd>BufferLineGoTo 6<CR>', desc = 'Go To Buffer 6' },
+  { '<leader>b7', '<cmd>BufferLineGoTo 7<CR>', desc = 'Go To Buffer 7' },
+  { '<leader>b8', '<cmd>BufferLineGoTo 8<CR>', desc = 'Go To Buffer 8' },
+  { '<leader>b9', '<cmd>BufferLineGoTo 9<CR>', desc = 'Go To Buffer 9' },
+  { '<leader>b0', '<cmd>BufferLineGoTo 10<CR>', desc = 'Go To Buffer 10' },
+
+  { '<leader>bp', '<cmd>BufferLineTogglePin<CR>', desc = 'Toggle Pinned Buffer' },
+
+  { '<leader>bs', group = '[S]ort' },
+  { '<leader>bsd', '<cmd>BufferLineSortByDirectory<CR>', desc = 'Close Left' },
+  { '<leader>bse', '<cmd>BufferLineSortByExtension<CR>', desc = 'Close Left' },
+  { '<leader>bsr', '<cmd>BufferLineSortByRelativeDirectory<CR>', desc = 'Close Left' },
+  { '<leader>bst', '<cmd>BufferLineSortByTabs<CR>', desc = 'Close Left' },
+
+  { '<leader>bc', group = '[C]lose' },
+  { '<leader>bsc', '<cmd>bd<CR>', desc = 'Close Current' },
+  { '<leader>bcl', '<cmd>BufferLineCloseLeft<CR>', desc = 'Close Left' },
+  { '<leader>bcr', '<cmd>BufferLineCloseRight<CR>', desc = 'Close Right' },
+  { '<leader>bco', '<cmd>BufferLineCloseOthers<CR>', desc = 'Close Others' },
+
+  { '<leader>bm', group = '[M]ove' },
+  { '<leader>bmn', '<cmd>BufferLineMoveNext<CR>', desc = 'Move Next' },
+  { '<leader>bmp', '<cmd>BufferLineMovePrev<CR>', desc = 'Move Previous' },
+
+  { '<leader>bm', group = '[G]roup' },
+  { '<leader>bmn', '<cmd>BufferLineGroupToggle<CR>', desc = 'Toggel Group' },
+  { '<leader>bmp', '<cmd>BufferLineGroupClose<CR>', desc = 'Close Group' },
 }
 
 vim.api.nvim_create_autocmd('TextYankPost', {
