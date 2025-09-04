@@ -89,9 +89,9 @@ return {
 
           -- if you prefer more traditional completion keymaps,
           -- you can uncomment the following lines
-          --['<cr>'] = cmp.mapping.confirm { select = true },
-          --['<tab>'] = cmp.mapping.select_next_item(),
-          --['<s-tab>'] = cmp.mapping.select_prev_item(),
+          ['<cr>'] = cmp.mapping.confirm { select = true },
+          ['<tab>'] = cmp.mapping.select_next_item(),
+          ['<s-tab>'] = cmp.mapping.select_prev_item(),
 
           -- manually trigger a completion from nvim-cmp.
           --  generally you don't need this, because nvim-cmp will display
