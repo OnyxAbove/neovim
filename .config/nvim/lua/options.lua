@@ -99,6 +99,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+
 -- Treesitter folding
 --vim.wo.foldmethod = 'expr'
 --vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
